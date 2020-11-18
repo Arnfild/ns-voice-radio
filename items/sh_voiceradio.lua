@@ -1,4 +1,4 @@
-ITEM.name = "Voice radio"
+ITEM.name = "Радио устройство"
 ITEM.model = "models/gibs/shield_scanner_gib1.mdl"
 ITEM.width = 1
 ITEM.height = 1
@@ -10,6 +10,9 @@ function ITEM:getDesc()
 	if (!self.entity or !IsValid(self.entity)) then
 		str = "A radio that allows you to talk to other characters in distance.\nPress %s to configure the radio."
 		return Format(str, input.LookupBinding( nut.config.get("voiceRadio_button") ))
+	else
+		str = "A radio that allows you to talk to other characters in distance."
+		return str
 	end
 end
 
