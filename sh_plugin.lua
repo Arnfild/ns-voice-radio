@@ -175,8 +175,8 @@ if CLIENT then
 
 		self.dial = {}
 		local freq = LocalPlayer():getChar():getData("voiceRadioFreq") or nil
+		local freqArr = {}
 		if freq then
-			freqArr = {}
 			for i = 1, #freq do
 				freqArr[i] = freq:sub(i, i)
 			end
