@@ -18,6 +18,14 @@ nut.config.add(
 	{category = PLUGIN.name}
 )
 
+nut.config.add(
+	"voiceRadio_submitSound",
+	"buttons/combine_button1.wav",
+	"Sound that will be played when submitting the frequency.",
+	nil,
+	{category = PLUGIN.name}
+)
+
 nut.util.include("sv_plugin.lua")
 
 local PLUGIN = PLUGIN
