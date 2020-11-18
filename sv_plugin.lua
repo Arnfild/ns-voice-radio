@@ -20,7 +20,7 @@ netstream.Hook("voiceRadioAdjust", function(client, freq, id)
         end
 
         if (item and item.voiceRadio and item:getOwner() == client) then
-            client:EmitSound("buttons/combine_button1.wav", 50, 170)
+            client:EmitSound(nut.config.get("voiceRadio_submitSound"), 50, 170)
             client:getChar():setData("voiceRadioFreq", freq)
         else
             client:notifyLocalized("voiceRadioNoRadio")
