@@ -53,7 +53,7 @@ function PLUGIN:PlayerCanHearPlayersVoice(listener, speaker)
     if speaker:getChar() and listener:getChar() then
         if speaker:getChar():getData("voiceRadioSwitch") and listener:getChar():getData("voiceRadioSwitch") then
             if speaker:getChar():getData("voiceRadioFreq") == listener:getChar():getData("voiceRadioFreq") then 
-                return true, true
+                return true, false
             end
         end
     end
